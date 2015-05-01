@@ -1,0 +1,171 @@
+<div class="page-header">
+    <h1>Mac
+        <small>Preparando o ambiente</small>
+    </h1>
+</div>
+<p>
+    Na plataforma Apple, o .NET pode ser instalado pelo <strong>Brew</strong>, o que facilita sua vida, pois ele vai
+    baixar tudo necessário, tornando a instalação bem simples.
+</p>
+
+<p>
+    Seguindo esta linha, daremos inicio a instalação do <strong>Brew</strong> e posteriormente do <strong>dnvm</strong>.
+</p>
+
+<div class="page-header">
+    <h2>Brew
+        <small>ambiente mac</small>
+    </h2>
+</div>
+<p>
+    O <strong>Brew</strong> pode ser facilmente instalado executando o seguinte comando no seu terminal.
+</p>
+
+<div class="well">
+    <samp>
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    </samp>
+</div>
+
+<p>
+    Após a instalação você pode executar o comando <samp>brew --version</samp> para verificar a versão instalada e
+    confirmar a instalação.
+</p>
+
+<div class="page-header">
+    <h2>dnvm
+        <small>.NET Version Manager</small>
+    </h2>
+</div>
+<p>
+    O primeiro passo é instalar o <strong>dnvm</strong>, que é a sigla para .NET Version Manager, ou gerenciador de
+    versões do .NET em português. É importante também salientar que esta instalação será feita apartir da
+    <em>branch</em> <strong>dev</strong>, ou seja, sempre pegando a última versão, que pode não ser a versão mais
+    estável.
+</p>
+
+<p>
+    Para realizar a instalação do <strong>dnvm</strong>, basta abrir um terminal e digitar os seguintes comandos:
+</p>
+
+<div class="well">
+    <samp>
+        brew tap aspnet/dnx <br/>
+        brew update <br/>
+        brew install dnvm
+    </samp>
+</div>
+
+<p>
+    Este procedimento garante o download do <strong>dnvm</strong> e instalação de todas as dependências necessárias na
+    sua máquina.
+</p>
+
+<p>
+    Com o <strong>dnvm</strong> devidamente baixado, chegou a hora da instalação. Tanto para instalação quanto para
+    atualizações, o comando é o mesmo:
+</p>
+
+<div class="well">
+    <samp>dnvm upgrade</samp>
+</div>
+
+<p>
+    <small>
+        ** Caso o comando <strong>dnvm</strong> não seja encontrado, é necessário utilizar <samp>source
+        dnvm.sh</samp> antes, para o comando ser reconhecido.
+    </small>
+</p>
+
+<p>
+    É sempre bom, depois de instalar ou atualizar o comando <strong>dnvm</strong>, executar o <samp>dnvm list</samp>
+    para ver
+    se a versão desejada foi mesmo instalada. O resultado deve ser algo parecido com:
+</p>
+
+<samp>
+    <pre>
+    Active Version     Runtime Architecture Location                             Alias
+    ------ -------     ------- ------------ --------                             -----
+    *      1.0.0-beta4 clr     x86          ~/.dnx/runtimes                      default
+    </pre>
+</samp>
+
+<p>
+    Pronto, tudo que você precisa para rodar o Core do .NET está instalado em sua máquina!
+</p>
+
+<div class="page-header">
+    <h1>Rodando sua primeira aplicação
+        <small>Preparando o ambiente</small>
+    </h1>
+</div>
+<p>
+    It's timeeee! Chegou a hora de produzir seu primeiro Hello World, então mãos a massa! Siga os passos abaixo para
+    iniciar sua primeira aplicação.
+</p>
+
+<ol>
+    <li>
+        Crie uma nova pasta, vazia e de preferência em um caminho sem espaços e caracteres especiais. Neste caso
+        utilizaremos o caminho ~/users/USER/Documents/dev/hello.
+    </li>
+    <li>
+        Crie um novo arquivo na raíz da pasta, chamado <strong>project.json</strong> com o seguinte conteúdo: <br/>
+        <samp>
+            <pre>{
+    "dependencies": {
+
+    },
+    "commands": {
+        "ConsoleApp": "ConsoleApp"
+    },
+    "frameworks": {
+        "dnx451": { },
+        "dnxcore50": {
+            "dependencies": {
+                "System.Console": "4.0.0-beta-*"
+            }
+        }
+    }
+}</pre>
+        </samp>
+    </li>
+    <li>
+        Crie outro arquivo na raíz da pasta, chamado <strong>Program.cs</strong>, com o seguinte conteúdo: <br/>
+        <samp>
+            <pre>using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine("Hello from dotnetstack!");
+    }
+}</pre>
+        </samp>
+    </li>
+    <li>
+        Abra um Console, e navegue para sua pasta, utilizando o comando <samp>cd ~/users/USER/Documents/dev/hello</samp>
+    </li>
+    <li>
+        Restaure os pacotes necessários para sua aplicação rodar utilizando o comando <samp>dnu restore</samp>
+    </li>
+    <li>
+        Execute a aplicação rodando o comando
+        <smap>dnx . run</smap>
+    </li>
+</ol>
+
+<p>
+    Se tudo ocorreu certo, você terá o seguinte resultado:
+</p>
+
+<samp>
+    <pre>dnx . run
+Hello from dotnetstack</pre>
+</samp>
+
+<p>
+    Pronto, seu ambiente está pronto e você já pode seguir enfrente e ver os outros demos e tutoriais!
+</p>

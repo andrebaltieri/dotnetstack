@@ -129,6 +129,11 @@
                 controllerAs: 'vm',
                 templateUrl: 'pages/main.html'
             })
+            .when('/sobre', {
+                controller: 'HomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'pages/about.html'
+            })
             .when('/inicio', {
                 controller: 'HomeCtrl',
                 controllerAs: 'vm',
@@ -148,6 +153,16 @@
                 controller: 'HomeCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'pages/docs/env/windows.html'
+            })
+            .when('/ambiente/mac', {
+                controller: 'HomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'pages/docs/env/mac.html'
+            })
+            .when('/ambiente/linux', {
+                controller: 'HomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'pages/docs/env/linux.html'
             });
     });
     angular.module('app').controller('HomeCtrl', function () {

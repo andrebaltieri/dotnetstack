@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8137f5ba-1a82-42b5-8211-c85cf95372e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/docs/env/windows.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/docs/env/linux.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/docs/env/mac.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -25,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="windows.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/docs/env/windows.html">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9432463">
-              <caret line="152" column="102" selection-start-line="152" selection-start-column="102" selection-end-line="152" selection-end-column="102" />
+            <state vertical-scroll-proportion="0.03859251">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -57,8 +59,12 @@
         <option value="$PROJECT_DIR$/pages/docs/start/clr.html" />
         <option value="$PROJECT_DIR$/pages/docs/start/aspnet.html" />
         <option value="$PROJECT_DIR$/pages/docs/start/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/docs/env/windows.html" />
+        <option value="$PROJECT_DIR$/pages/docs/env/mac.html" />
+        <option value="$PROJECT_DIR$/pages/docs/env/linux.html" />
+        <option value="$PROJECT_DIR$/pages/docs/about.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/pages/about.html" />
       </list>
     </option>
   </component>
@@ -148,10 +154,6 @@
               <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="start" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -208,6 +210,7 @@
       <recent name="C:\dev\dotnetstack\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\dotnetstack\pages" />
       <recent name="C:\dev\dotnetstack\pages\docs\start" />
     </key>
   </component>
@@ -360,13 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.63889">
-          <caret line="149" column="52" selection-start-line="149" selection-start-column="52" selection-end-line="149" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/docs/start/clr.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69466513">
@@ -376,8 +372,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/docs/env/windows.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9432463">
-          <caret line="152" column="102" selection-start-line="152" selection-start-column="102" selection-end-line="152" selection-end-column="102" />
+        <state vertical-scroll-proportion="0.71858406">
+          <caret line="135" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="153" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.880953">
+          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/docs/env/mac.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09648127">
+          <caret line="5" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/docs/env/linux.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03859251">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
       </provider>
