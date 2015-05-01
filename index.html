@@ -143,6 +143,11 @@
                 controller: 'HomeCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'pages/docs/start/aspnet.html'
+            })
+            .when('/ambiente/windows', {
+                controller: 'HomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'pages/docs/env/windows.html'
             });
     });
     angular.module('app').controller('HomeCtrl', function () {
