@@ -1,0 +1,136 @@
+<div class="col-md-3">
+    <br/><br/>
+
+    <ul class="nav nav-pills nav-stacked">
+        <li role="presentation"><a href="#">Entendendo o CLR</a></li>
+        <li role="presentation"><a href="#">Core CLR</a></li>
+        <li role="presentation"><a href="#">Full CLR</a></li>
+        <li role="presentation"><a href="#">Versões do CLR</a></li>
+        <li role="presentation"><a href="#">Versões de Pacotes</a></li>
+    </ul>
+</div>
+<div class="col-md-9">
+    <div class="page-header">
+        <h1>Entendendo o CLR
+            <small>Core CLR e Full CLR</small>
+        </h1>
+    </div>
+    <p>
+        Para o novo .NET rodar sobre o Linux e Mac ele se faz uso do
+        <a href="http://www.mono-project.com/" target="_blank">Mono</a> uma versão já conhecida mas não oficial do .NET
+        Framework para sistemas baseados no Linux. Este porte entretanto não suporta todas as funcionalidades que o .NET
+        Framework para Windows possui.
+    </p>
+
+    <p>
+        Sendo assim, nesta nova versão, tivemos o framework dividido em duas partes, o Core e o Full, sendo que o o Core
+        funciona em qualquer plataforma e o full só funciona no Windows. Com isto, devemos nos atentar sempre ao
+        framework que estamos utilizando. Se você estiver no Linux ou Mac, não tem jeito, você estará fazendo uso do
+        Core, mas se estiver no Windows, pode alterar entre o Core e Full, utilizando o comando:
+    </p>
+
+    <p>
+        O framework foi inteiro reescrito, repensado, faz agora uso do Roslyn, novo compilador e manipula as DLLs em
+        memória ao invés de disco, o que o torna bem mais rápido.
+    </p>
+
+    <div class="well">
+        <samp>dnvm set &lt;versão&gt;</samp>
+    </div>
+
+    <div class="page-header">
+        <h1>Core CLR
+            <small>Core CLR e Full CLR</small>
+        </h1>
+    </div>
+    <p>
+        Pela versão do Core CLR ser reduzida, nem todos os pacotes funcionam com ele, então é bom definir quais pacotes
+        você vai utilizar antes de escolher seu framework.
+    </p>
+
+    <p>
+        Esta redução no número de pacotes deve-se ao fato de que estes ainda não foram portados para o novo framework, o
+        que deve acontecer em breve. A medida que novos pacotes forem saindo, o framework irá enriquecendo.
+    </p>
+
+    <p>
+        Vale lembrar que esta redução é para um bem maior, pois foram removidas todas as dependências do Windows, o que
+        o torna mais leve e rápido.
+    </p>
+
+    <div class="page-header">
+        <h1>Full CLR
+            <small>Core CLR e Full CLR</small>
+        </h1>
+    </div>
+    <p>
+        A versão Full do framework é a que já conhecemos e trabalhamos hoje. Ela pode ser instalada via um EXE, via Web
+        Platforma Installer ou junto a instalação do Visual Studio.
+    </p>
+
+    <p>
+        Esta versão, apesar de otimizada, continua como antes, ou seja, você tem total suporte para os pacotes que
+        utilizava antes e ele roda lado a lado com outras versões do .NET Framework. Esta nova versão vem junto com o
+        <a href="https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs.aspx" target="_blank">Visual
+            Studio 2015</a>.
+    </p>
+
+    <div class="page-header">
+        <h1>Versões do CLR
+            <small>Core CLR e Full CLR</small>
+        </h1>
+    </div>
+    <p>
+        Como sabemos, estamos ainda na versão <strong>beta</strong> do vNext, e periódicamente receberemos novas
+        versões. Sendo assim você pode ter várias versões instaladas. Você pode checar as versões instaladas em sua
+        máquina executando o comando:
+    </p>
+
+    <div class="well">
+        <samp>dnvm list</samp>
+    </div>
+
+    <p>
+        Não se preocupe se você recebeu uma mensagem dizendo que o comando <strong>dnvm</strong> não foi encontrado,
+        isto ocorre por que você ainda não preparou seu ambiente. Vamos ver isto nos próximos passos.
+    </p>
+
+    <div class="page-header">
+        <h1>Versões dos Pacotes
+            <small>Core CLR e Full CLR</small>
+        </h1>
+    </div>
+    <p>
+        Além da versão do seu CLR, você precisa prestar atenção na versão dos pacotes que você está utilizando. Por
+        exemplo, se você atualizou seu CLR para a versão <strong>beta5-11698</strong> e está referenciando um pacote da
+        versão <strong>beta5-11500</strong>, você corre o risco de ter erros na aplicação, pois possivelmente os pacotes
+        também sofreram alterações. Neste caso você está com o CLR atualizado, porém utilizando pacotes desatualizados.
+    </p>
+
+    <p>
+        Você pode checar as versões dos pacotes que sua aplicação depende no arquivo <strong>project.json</strong> da
+        sua aplicação:
+    </p>
+
+    <div class="well">
+        <samp>
+            "dependencies": { <br/>
+            &nbsp;&nbsp;"Microsoft.AspNet.Server.IIS": "1.0.0-11500", <br/>
+            &nbsp;&nbsp;"Microsoft.AspNet.Mvc": "6.0.0-11500", <br/>
+            &nbsp;&nbsp;"Microsoft.AspNet.Hosting": "1.0.0-11500", <br/>
+            &nbsp;&nbsp;"Microsoft.AspNet.Security.Cookies": "1.0.0-11500", <br/>
+            &nbsp;&nbsp;"Microsoft.AspNet.Server.WebListener": "1.0.0-11500", <br/>
+            &nbsp;&nbsp;"Microsoft.AspNet.StaticFiles": "1.0.0-11500", <br/>
+            &nbsp;&nbsp;"Microsoft.AspNet.FileSystems": "1.0.0-11500", <br/>
+            &nbsp;&nbsp;"Microsoft.AspNet.Http": "1.0.0-11500", <br/>
+            &nbsp;&nbsp;"Kestrel": "1.0.0-11500", <br/>
+            &nbsp;&nbsp;"EntityFramework.InMemory": "7.0.0-11500" <br/>
+            }
+        </samp>
+    </div>
+
+    <p>
+        Falaremos mais sobre versionamento de pacotes adiante.
+    </p>
+
+</div>

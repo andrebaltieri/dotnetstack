@@ -1,0 +1,101 @@
+<div class="col-md-3">
+    <br/><br/>
+
+    <ul class="nav nav-pills nav-stacked">
+        <li role="presentation"><a href="#">Por que um novo ASP.NET?</a></li>
+        <li role="presentation"><a href="#">Mudanças no Projeto</a></li>
+    </ul>
+</div>
+<div class="col-md-9">
+    <div class="page-header">
+        <h1>Por que um novo ASP.NET?
+            <small>ASP.NET vNext</small>
+        </h1>
+    </div>
+    <p>
+        O mundo do desenvolvimento de software muda a cada dia, porém o pipeline do ASP.NET continua o mesmo, exceto por
+        pequenas mudanças desde seu lançamento em 2001 e a implementação do padrão MVC em 2009.
+    </p>
+
+    <p>
+        Neste tempo, outras tecnologias Web cresceram muito, e novas tecnologias chegaram, como o
+        <strong>NodeJs</strong>. Novas formas de criar a Web tomaram o mercado e a Microsoft sentiu a necessidade de
+        mudar.
+    </p>
+
+    <p>
+        A ideia então era uma mudança drástica, com a remoção do <strong>System.Web</strong>, que era basicamente o
+        coração do ASP.NET e a entrada no mundo Open Source, tornando-o código aberto com direito a projeto no <strong>GitHub</strong>.
+    </p>
+
+    <p>
+        Mas o que nós, desenvolvedores ganhamos com isso? A resposta é simples... Liberdade! Podemos codificar no Mac,
+        Windows ou Linux, podemos sugerir mudanças, podemos entender melhor o que acontece por dentro das coisas e
+        principalmente, podemos evoluir mais, pensando também fora do mundo Microsoft!
+    </p>
+
+    <p>
+        E o que a Microsoft ganha com isso? A resposta também é simples... Hoje o foco da Microsoft é Mobile First e
+        Cloud First, fica claro o direcionamento da empresa para a área de serviços, e como ela ganharia espaço no mundo
+        "Linux" se suas ferramentas só rodam em Windows? O Linux tem um bom mercado no mundo da infraestrutura.
+    </p>
+
+    <p>
+        Com tantas empresas novas, tantas tecnologias boas surgindo, seria lamentável se novamente só fosse possível
+        desenvolver utilizando ASP.NET na plataforma Microsoft, seria se fechar dentro de uma caixa, como faz a Apple
+        com suas tecnologias.
+    </p>
+
+    <div class="page-header">
+        <h1>Mudanças no Projeto
+            <small>ASP.NET vNext</small>
+        </h1>
+    </div>
+    <p>
+        Quem acompanhou a chegada do <a href="http://owin.org/" target="_blank">OWIN</a>, já estará familiarizado com o
+        projeto bem mais enxuto do <strong>vNext</strong>, que agora conta com apenas <strong>dois</strong>
+        arquivos obrigatórios.
+    </p>
+
+    <ul>
+        <li>
+            <strong>project.json</strong><br/>
+            É o arquivo de configuração da aplicação. Neste arquivo são definidos as
+            dependèncias (Pacotes) da aplicação, a versão do CLR e todas as outras configurações necessárias. <br/><br/>
+        </li>
+        <li>
+            <strong>Startup.cs/Program.cs</strong><br/>
+            É o arquivo principal da aplicação. Ele sempre será lido por primeiro para tomar as outras ações
+            necessárias. No caso de aplicações do tipo <strong>Console</strong>, o arquivo principal chama-se <strong>Program.cs</strong>
+            e para as aplicações <strong>Web</strong> este arquivo chama-se <strong>Startup.cs</strong>. Embora estes
+            nomes possam ser modificados é recomendado mantê-los no padrão.
+        </li>
+    </ul>
+
+    <p>
+        Além destes arquivos obrigatórios, alguns outros arquivos são comumente encontrados nos projetos do <strong>vNext</strong>,
+        tais como:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Package.json</strong><br/>
+            Este arquivo gerencia as informações da sua aplicação que serão expostas posteriormente, tais como autor,
+            e-mail para contato e afins.
+        </li>
+        <li>
+            <strong>NuGet.config</strong><br/>
+            Este arquivo sobrescreve o arquivo de configuração global do <strong>NuGet</strong>, ou seja, caso haja este
+            arquivo na raíz da sua aplicação, ele será lido e padrão de pacotes será ignorado.
+        </li>
+        <li>
+            <strong>Pastas do ASP.NET MVC</strong><br/>
+            As pastas <strong>Model (M)</strong>, <strong>View (V)</strong> e <strong>Controller (C)</strong> também são
+            encontradas em projetos do tipo Web, e representam a estrutura do ASP.NET MVC.
+        </li>
+    </ul>
+
+    <p>
+        Com apenas estes arquivos é plenamente possível ter uma aplicação Web rodando ASP.NET no Windows, Mac e Linux.
+    </p>
+</div>

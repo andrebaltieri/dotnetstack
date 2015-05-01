@@ -84,13 +84,20 @@
                             class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#/inicio">Antes de comçar</a></li>
-                        <li><a href="#/inicio/clr">Core CLR e Full CRL</a></li>
+                        <li><a href="#/inicio/clr">Core CLR e Full CLR</a></li>
                         <li><a href="#/inicio/aspnetvnext">Mudanças no novo ASP.NET</a></li>
                         <li role="presentation" class="divider"></li>
-                        <li><a href="#/ambiente">Preparando o ambiente</a></li>
+                        <li class="text-center">Preparando o ambiente</li>
                         <li><a href="#/ambiente/windows">Ambiente Windows</a></li>
                         <li><a href="#/ambiente/linux">Ambiente Linux</a></li>
                         <li><a href="#/ambiente/mac">Ambiente Mac</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li class="text-center">Desenvolvimento</li>
+                        <li><a href="#/ambiente/windows">Instruções Gerais</a></li>
+                        <li><a href="#/ambiente/windows">CLRs e Pacotes</a></li>
+                        <li><a href="#/ambiente/windows">Ferramentas</a></li>
+                        <li><a href="#/ambiente/windows">Desktop (Console)</a></li>
+                        <li><a href="#/ambiente/windows">Web (ASP.NET MVC e WebAPI)</a></li>
                         <li role="presentation" class="divider"></li>
                         <li><a href="#/demos">Demos</a></li>
                     </ul>
@@ -126,6 +133,16 @@
                 controller: 'HomeCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'pages/docs/start/index.html'
+            })
+            .when('/inicio/clr', {
+                controller: 'HomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'pages/docs/start/clr.html'
+            })
+            .when('/inicio/aspnetvnext', {
+                controller: 'HomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'pages/docs/start/aspnet.html'
             });
     });
     angular.module('app').controller('HomeCtrl', function () {
