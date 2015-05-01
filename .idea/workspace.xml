@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8137f5ba-1a82-42b5-8211-c85cf95372e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/docs/start/aspnet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/docs/start/clr.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/docs/start/index.html" afterPath="$PROJECT_DIR$/pages/docs/start/index.html" />
     </list>
     <ignored path="dotnetstack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +25,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/pages/docs/start/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5618615">
-              <caret line="97" column="68" selection-start-line="97" selection-start-column="68" selection-end-line="97" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.019296255">
+              <caret line="37" column="99" selection-start-line="37" selection-start-column="99" selection-end-line="37" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -55,10 +53,10 @@
         <option value="$PROJECT_DIR$/pages/main.html" />
         <option value="$PROJECT_DIR$/pages/docs/start.html" />
         <option value="$PROJECT_DIR$/pages/docs/start/sidebar.html" />
-        <option value="$PROJECT_DIR$/pages/docs/start/index.html" />
         <option value="$PROJECT_DIR$/pages/docs/start/clr.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pages/docs/start/aspnet.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/pages/docs/start/index.html" />
       </list>
     </option>
   </component>
@@ -303,14 +301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/docs/start/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32635254">
-          <caret line="18" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/docs/start/clr.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87287176">
@@ -329,8 +319,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5618615">
-          <caret line="97" column="68" selection-start-line="97" selection-start-column="68" selection-end-line="97" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.61975026">
+          <caret line="85" column="60" selection-start-line="85" selection-start-column="60" selection-end-line="85" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/docs/start/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019296255">
+          <caret line="37" column="99" selection-start-line="37" selection-start-column="99" selection-end-line="37" selection-end-column="99" />
           <folding />
         </state>
       </provider>
